@@ -16,7 +16,7 @@ public class EmployeeServiceImpl implements Service {
 
     //@Override
     @Action(scope = Scope.PUBLIC)
-    public Employee createEmployee (@ActionParameter(name = "Employee ID") @NotBlank String employeeId,
+    public String createEmployee (@ActionParameter(name = "Employee ID") @NotBlank String employeeId,
                                     @ActionParameter(name = "Name") @NotBlank String employeeName){
 
         //define GUID Field ID
@@ -41,8 +41,10 @@ public class EmployeeServiceImpl implements Service {
         catch (RxException e){
             ServiceLocator.getLogger().info("Employee record creation failed");
         }
-        return null;
+        return recordInstance.getId();
     }
+
+
 
     public static EmployeeService getEmployeeService() {
         return (EmployeeService) ServiceLocator.getBundleService().getService(EmployeeServiceImpl.class.getName());

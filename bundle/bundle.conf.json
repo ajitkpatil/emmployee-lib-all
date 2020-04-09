@@ -1,0 +1,63 @@
+{
+    "bundle": {
+        "id": "com.fusiongbs.ajit.patil.employee.emmployee-lib",
+        "version": "0.0.1",
+        "src": "./src/main/webapp",
+        "target": "./target/web-build/webapp",
+        "coverage": "./target/coverage",
+        "resources": [
+            "./",
+			"$RX_SDK_HOME/standardlib"
+        ],
+        "options": {
+            "livereload-port": 39005,
+            "skip-tests": true,
+            "skip-validation": true,
+            "api-host": "https://developer8655.innovate.bmc.com",
+            "api-port": 443,
+            "api-https": true,
+            "host": "localhost",
+            "port": 9005
+        },
+        "packages": {
+            "lib": {
+                "scripts": [],
+                "styles": []
+            },
+            "app": {
+                "scripts": [
+                    "scripts/**/*.global",
+                    "scripts/**/*.module",
+                    "scripts/**/*.config",
+                    "scripts/**/*.routes",
+                    "scripts/**/*.constant",
+                    "scripts/**/*.filter",
+                    "scripts/**/*.value",
+                    "scripts/**/*.run",
+                    "scripts/**/*.service",
+                    "scripts/**/*.class",
+                    "scripts/**/*.directive",
+                    "scripts/**/*.controller",
+                    "scripts/**/*.resource",
+                    "!scripts/*",
+                    "scripts/com.fusiongbs.ajit.patil.employee.emmployee-lib.module",
+                    "scripts/*"
+                ],
+                "styles": [
+                    "resources/sass/com.fusiongbs.ajit.patil.employee.emmployee-lib"
+                ],
+                "templates": [
+                    "scripts/**/*.html"
+                ]
+            },
+            "ext": {
+                "scripts": [
+                ],
+                "styles": [
+                ],
+                "templates": [
+                ]
+            }
+        }
+    }
+}

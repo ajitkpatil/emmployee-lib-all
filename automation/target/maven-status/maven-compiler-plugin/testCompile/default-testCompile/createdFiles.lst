@@ -1,0 +1,5 @@
+com\fusiongbs\ajit\patil\employee\automation\main\MainAutomationClass.class
+com\fusiongbs\ajit\patil\employee\automation\steps\AutomationSuiteGivenState.class
+com\fusiongbs\ajit\patil\employee\automation\AutomationSuite.class
+com\fusiongbs\ajit\patil\employee\automation\steps\AutomationSuiteThenState.class
+com\fusiongbs\ajit\patil\employee\automation\steps\AutomationSuiteWhenState.class
